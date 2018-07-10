@@ -41,9 +41,7 @@
     _pdfView = pdfView;
     [self.view addSubview:pdfView];
 
-    
     self.toolbar.frame = CGRectMake(0, pdfView.bottom,self.view.width, 80);
-
     [self.view addSubview:self.toolbar];
 }
 
@@ -61,6 +59,13 @@
                 if ([self.pdfView canGoToNextPage]) {
                     [self.pdfView goToNextPage:self.pdfdocument];
                 }
+            } else if (type == 300) {
+                // 可通过定义一个view来定义style
+                PDFBorder *border = [[PDFBorder alloc] init];
+                border.style = kPDFBorderStyleDashed;
+                border.lineWidth = 10;
+                PDFAnnotation *annotation = [[PDFAnnotation alloc] initWithBounds:CGRectMake(50, 100, 300, 300) forType:PDFAnnotationSubtypeCircle withProperties:@{PDFAnnotationKeyColor:[UIColor redColor],PDFAnnotationKeyBorder:border}];
+                [[self.pdfView currentPage] addAnnotation:annotation];
             }
         };
     }
