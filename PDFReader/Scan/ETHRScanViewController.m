@@ -1,22 +1,23 @@
 //
-//  ViewController.m
+//  PDFRScanViewController.m
 //  PDFReader
 //
 //  Created by fangshufeng on 2018/7/10.
 //  Copyright © 2018 fangshufeng. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ETHRScanViewController.h"
+#import "PDFTempToolbar.h"
 
-@interface ViewController ()
+@interface ETHRScanViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ETHRScanViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-  
+    
 }
 
 

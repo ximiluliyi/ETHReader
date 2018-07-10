@@ -1,0 +1,14 @@
+//
+//  PDFReader-PrefixHeader.pch
+//  PDFReader
+//
+//  Created by fangshufeng on 2018/7/10.
+//  Copyright © 2018 fangshufeng. All rights reserved.
+//
+
+#ifndef PDFReader_PrefixHeader_pch
+#define PDFReader_PrefixHeader_pch
+
+#import <YYCategories.h>
+
+#endif /* PDFReader_PrefixHeader_pch */
