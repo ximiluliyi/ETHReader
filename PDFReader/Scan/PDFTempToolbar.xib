@@ -41,21 +41,33 @@
                         <action selector="actions:" destination="iN0-l3-epB" eventType="touchUpInside" id="Nhy-bd-aDs"/>
                     </connections>
                 </button>
+                <button opaque="NO" tag="400" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBW-Hc-XDR">
+                    <rect key="frame" x="218" y="8" width="62" height="30"/>
+                    <state key="normal" title="添加文本"/>
+                    <connections>
+                        <action selector="actions:" destination="iN0-l3-epB" eventType="touchUpInside" id="7zO-CV-zFZ"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="JBW-Hc-XDR" firstAttribute="centerY" secondItem="Ley-hU-558" secondAttribute="centerY" id="DHe-Ts-xwk"/>
                 <constraint firstItem="DTF-jc-u4j" firstAttribute="leading" secondItem="MVy-JP-igS" secondAttribute="trailing" constant="22" id="Rdq-oK-faC"/>
                 <constraint firstItem="DTF-jc-u4j" firstAttribute="height" secondItem="MVy-JP-igS" secondAttribute="height" id="Ti3-LU-434"/>
+                <constraint firstItem="JBW-Hc-XDR" firstAttribute="width" secondItem="Ley-hU-558" secondAttribute="width" id="WGI-k9-P7l"/>
                 <constraint firstItem="DTF-jc-u4j" firstAttribute="centerY" secondItem="MVy-JP-igS" secondAttribute="centerY" id="brE-5W-hjo"/>
                 <constraint firstItem="DTF-jc-u4j" firstAttribute="width" secondItem="MVy-JP-igS" secondAttribute="width" id="dan-g7-HSa"/>
                 <constraint firstItem="Ley-hU-558" firstAttribute="height" secondItem="DTF-jc-u4j" secondAttribute="height" id="doh-Mz-Oqk"/>
+                <constraint firstItem="JBW-Hc-XDR" firstAttribute="height" secondItem="Ley-hU-558" secondAttribute="height" id="fFw-Yp-5An"/>
                 <constraint firstItem="MVy-JP-igS" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="h5z-aY-mAO"/>
                 <constraint firstItem="Ley-hU-558" firstAttribute="leading" secondItem="DTF-jc-u4j" secondAttribute="trailing" constant="19" id="ov5-mc-6L3"/>
                 <constraint firstItem="MVy-JP-igS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="r4y-B1-9NW"/>
                 <constraint firstItem="Ley-hU-558" firstAttribute="centerY" secondItem="DTF-jc-u4j" secondAttribute="centerY" id="saI-45-bsW"/>
+                <constraint firstItem="JBW-Hc-XDR" firstAttribute="leading" secondItem="Ley-hU-558" secondAttribute="trailing" constant="7" id="una-LZ-cwf"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-156" y="-32"/>
         </view>
     </objects>
 </document>

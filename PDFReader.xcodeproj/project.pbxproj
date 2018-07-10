@@ -573,6 +573,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F7SF2U92CF;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PDFReader/MISC/PDFReader-PrefixHeader.pch";
 				INFOPLIST_FILE = PDFReader/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11;
@@ -580,7 +581,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dianrong.PDFReader;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dianrong.uloan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -592,6 +593,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F7SF2U92CF;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PDFReader/MISC/PDFReader-PrefixHeader.pch";
 				INFOPLIST_FILE = PDFReader/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11;
@@ -599,7 +601,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dianrong.PDFReader;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dianrong.uloan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

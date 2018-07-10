@@ -64,8 +64,15 @@
                 PDFBorder *border = [[PDFBorder alloc] init];
                 border.style = kPDFBorderStyleDashed;
                 border.lineWidth = 10;
-                PDFAnnotation *annotation = [[PDFAnnotation alloc] initWithBounds:CGRectMake(50, 100, 300, 300) forType:PDFAnnotationSubtypeCircle withProperties:@{PDFAnnotationKeyColor:[UIColor redColor],PDFAnnotationKeyBorder:border}];
+                PDFAnnotation *annotation = [[PDFAnnotation alloc] initWithBounds:CGRectMake(50, 100, 300, 300) forType:PDFAnnotationSubtypeCircle withProperties:@{PDFAnnotationKeyColor:[UIColor redColor]}];
+                annotation.border = border;
                 [[self.pdfView currentPage] addAnnotation:annotation];
+            
+            } else if (type == 400) {
+               
+                PDFAnnotation *annotation = [[PDFAnnotation alloc] initWithBounds:CGRectMake(50, 100, 300, 300) forType:PDFAnnotationSubtypeFreeText withProperties:@{PDFAnnotationKeyContents:@"test"}];
+                [[self.pdfView currentPage] addAnnotation:annotation];
+             
             }
         };
     }
