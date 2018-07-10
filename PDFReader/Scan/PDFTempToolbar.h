@@ -10,4 +10,8 @@
 
 @interface PDFTempToolbar : UIView
 
++ (instancetype)toolbar;
+
+@property (nonatomic, copy) void (^actionsTypes) (NSInteger type);
+
 @end

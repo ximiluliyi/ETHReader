@@ -6,9 +6,9 @@
 //  Copyright © 2018 fangshufeng. All rights reserved.
 //
 
-#import "ETHReaderBaseController.h"
+#import "ETHBaseViewController.h"
 
-@interface ETHRScanViewController : ETHReaderBaseController
+@interface ETHRScanViewController : ETHBaseViewController
 
 @property (nonatomic, copy) NSString *documentName;
 

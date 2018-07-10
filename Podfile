@@ -2,5 +2,5 @@
 # platform :ios, '9.0'
 
 target 'PDFReader' do
-
+    pod 'YYCategories'
 end

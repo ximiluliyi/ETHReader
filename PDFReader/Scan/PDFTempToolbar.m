@@ -10,12 +10,14 @@
 
 @implementation PDFTempToolbar
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
++ (instancetype)toolbar {
+    return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:nil options:nil] lastObject];
 }
-*/
+
+- (IBAction)actions:(UIButton *)sender {
+    if (self.actionsTypes) {
+        self.actionsTypes(sender.tag);
+    }
+}
 
 @end
